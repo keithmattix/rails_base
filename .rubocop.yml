@@ -6,7 +6,6 @@ AllCops:
     - 'test/fixtures/**/*'
     - 'Gemfile'
     - 'Rakefile'
-    - 'node_modules/**/*'
 Rails:
   Enabled: true
 
@@ -26,7 +25,7 @@ Metrics/ClassLength:
   CountComments: false  # count full line comments?
   Max: 175
 
-Style/NumericLiterals: 
+Style/NumericLiterals:
   Enabled: false
 Style/Documentation:
   Description: 'Document classes and non-namespace modules.'
