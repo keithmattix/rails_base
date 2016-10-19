@@ -1,0 +1,39 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'tmp/**/*'
+    - 'db/**/*'
+    - 'test/fixtures/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'node_modules/**/*'
+Rails:
+  Enabled: true
+
+Metrics/MethodLength:
+  Max: 25
+Metrics/LineLength:
+  Max: 120
+Metrics/AbcSize:
+  # The ABC size is a calculated magnitude, so this number can be a Fixnum or
+  # a Float.
+  Max: 35
+Metrics/PerceivedComplexity:
+  Max: 10
+Metrics/CyclomaticComplexity:
+  Max: 10
+Metrics/ClassLength:
+  CountComments: false  # count full line comments?
+  Max: 175
+
+Style/NumericLiterals: 
+  Enabled: false
+Style/Documentation:
+  Description: 'Document classes and non-namespace modules.'
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Style/StructInheritance:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
